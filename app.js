@@ -65,7 +65,4 @@ app.use((req, res) => {
 
 });
 
-var port= process.env.port ||3000;
-app.listen(port, () => {
-    console.log("Server running!");
-});
+app.listen(process.env.PORT || 5000)
