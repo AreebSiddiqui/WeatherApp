@@ -30,14 +30,14 @@ app.post("/",(req,res)=>
  if (err)
     {
         
-        res.render('index',{weather:null,error:"Error, Please31 Tryagain"});
+        res.render('index',{weather:null,error:"Error, Please Tryagain"});
     }
 else 
     {
         
         if (weather.main ==  undefined)
             {
-                res.render('index',{weather:null,error:"Error, Please 12Tryagain"});
+                res.render('index',{weather:null,error:"Error, Please Tryagain"});
                 
             }
 
