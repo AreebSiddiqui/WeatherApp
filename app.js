@@ -15,7 +15,7 @@ app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res, next) => {
-    res.render('index');
+    res.render("index",{weather:null,error:"Error,Please Tryagain"});
    
 });
 
