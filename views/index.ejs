@@ -1,0 +1,26 @@
+<% include header %>
+
+    <h1 style="color:brown">Weather App
+        <h2>
+            <% if(weather !== null){ %>
+                <h2>It is
+                    <%= weathertemp %>&#8451; in
+                        <%= weathername %>.</h2>
+                <% } %>
+
+                    <% if(error !== null){ %>
+                        <<h2>
+                            <%= error %>
+                        </h2>
+                        <% } %>
+                            <form action="/" method="POST" class="pure-form">
+                                <input type="text" name="city" placeholder="Enter a City name" required> 
+                               
+                                <input type="submit" class=" pure-button-primary" value="Go">
+                            </form>
+
+
+
+
+
+                            <% include footer %>
