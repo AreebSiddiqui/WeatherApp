@@ -15,7 +15,7 @@ app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    res.render("index",{weather:null,error:"Error,Please Tryagain"});
+    res.render("index",{weather:null,error:null});
    
 });
 
@@ -30,14 +30,14 @@ app.post("/",(req,res)=>
  if (err)
     {
         
-        res.render("index",{weather:null,error:"Error,Please Tryagain"});
+        res.render('index',{weather:null,error:"Error, Please31 Tryagain"});
     }
 else 
     {
         
         if (weather.main ==  undefined)
             {
-                res.render('index',{weather:null,error:"Error,Please Tryagain"});
+                res.render('index',{weather:null,error:"Error, Please 12Tryagain"});
                 
             }
 
