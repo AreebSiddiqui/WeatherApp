@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.get("/", (req, res, next) => {
+app.get("/", (req, res) => {
     res.render("index",{weather:null,error:"Error,Please Tryagain"});
    
 });
